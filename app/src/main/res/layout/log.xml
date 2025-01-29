@@ -9,8 +9,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/log"
-    tools:context=".LogActivity"
-    >
+    tools:context=".LogActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -25,7 +24,6 @@
             android:layout_height="356dp"
             android:orientation="vertical"
             android:padding="24dp">
-
 
             <TextView
                 android:id="@+id/loginText"
@@ -42,19 +40,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:hint="Username"
                 android:textColor="@color/white"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:textSize="18sp" />
-
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_text_background"
                 android:hint="Password"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
@@ -68,11 +65,7 @@
                 android:text="Login"
                 android:textSize="18sp"
                 app:cornerRadius="15dp" />
-
-
         </LinearLayout>
-
-
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -84,7 +77,8 @@
         android:text="Not yet registered? Signup Now"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="14sp" />
-
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
 
 </LinearLayout>
