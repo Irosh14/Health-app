@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -12,11 +13,7 @@
         android:theme="@style/Theme.HelthApp"
         tools:targetApi="31">
 
-        <!-- FIX: Removed duplicate MAIN launcher from SignupActivity -->
-        <activity android:name=".SignupActivity"
-            android:exported="true" />
-
-        <!-- Set LogActivity as the Launcher -->
+        <!-- LogActivity is the first screen (Launcher) -->
         <activity
             android:name=".LogActivity"
             android:exported="true">
@@ -26,6 +23,17 @@
             </intent-filter>
         </activity>
 
+        <!-- Signup Activity -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+
+        <!-- Home Activity (Your class name is 'home') -->
+        <activity
+            android:name=".home"
+            android:exported="true" />
+
+        <!-- Main Activity (if used somewhere) -->
         <activity android:name=".MainActivity" android:exported="true" />
 
     </application>

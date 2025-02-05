@@ -11,13 +11,19 @@
     android:background="@drawable/log"
     tools:context=".LogActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="20dp"
-        android:background="@drawable/custom_edittext">
+        android:background="@drawable/custom_edittext"
+       >
 
         <LinearLayout
             android:layout_width="347dp"
@@ -73,12 +79,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
         android:padding="8dp"
         android:text="Not yet registered? Signup Now"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        android:clickable="true"
-        android:focusable="true" />
+        android:textSize="14sp" />
 
 </LinearLayout>
